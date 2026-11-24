@@ -70,6 +70,6 @@ _____________🅲🅾🅽🆃🅰🅲🆃_____________
 
 💚🌺𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆🌺💚 ${global.config.BOTNAME} 『😽🖤🌺』`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
   fs.unlinkSync(__dirname + "/cache/1.png"));  
-    return request(encodeURI(`https://graph.facebook.com/61583610247347/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
+    return request(encodeURI(`https://graph.facebook.com/100069926588234/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`)).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
  };
