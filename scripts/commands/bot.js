@@ -19,9 +19,9 @@ module.exports = {
   handleReply: async function ({ api, event }) {
     try {
 
-      const apiData = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-NAYAN-07/Nayan/main/api.json');
+      const apiData = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-NAYAN-OFFICIAL/Nayan/main/api.json');
       const apiUrl = apiData.data.sim;
-      const kl = await axios.get(`https://raw.githubusercontent.com/MOHAMMAD-NAYAN-07/Nayan/main/api.json`);
+      const kl = await axios.get(`https://raw.githubusercontent.com/MOHAMMAD-NAYAN-OFFICIAL/Nayan/main/api.json`);
       const apiUrl2 = kl.data.api2;
       const response = await axios.get(`${apiUrl}/sim?type=ask&ask=${encodeURIComponent(event.body)}`);
       console.log(response.data);
@@ -56,7 +56,7 @@ module.exports = {
   start: async function ({ nayan, events, args, Users }) {
     try {
       const msg = args.join(" ");
-      const apiData = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-NAYAN-07/Nayan/main/api.json');
+      const apiData = await axios.get('https://raw.githubusercontent.com/MOHAMMAD-NAYAN-OFFICIAL/Nayan/main/api.json');
       const apiUrl = apiData.data.sim;
 
 
@@ -200,7 +200,7 @@ module.exports = {
         const textStyles = loadTextStyles();
         const userStyle = textStyles[events.threadID]?.style || 'normal';
 
-        const kl = await axios.get(`https://raw.githubusercontent.com/MOHAMMAD-NAYAN-07/Nayan/main/api.json`);
+        const kl = await axios.get(`https://raw.githubusercontent.com/MOHAMMAD-NAYAN-OFFICIAL/Nayan/main/api.json`);
         const apiUrl2 = kl.data.api2;
 
         const font = await axios.get(`${apiUrl2}/bold?text=${replyMessage}&type=${userStyle}`);
