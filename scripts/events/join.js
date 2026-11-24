@@ -49,7 +49,7 @@ module.exports.run = async function({ api, event, Users }) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
     let gifUrl = 'https://i.postimg.cc/mrzwcJsh/GIF-20250712-114810-632.gif';
-let gifPath = __dirname + '/Nayan/join/join.gif';
+let gifPath = __dirname + '/Nayan/join/20260615_175139@1647879766.jpg';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
@@ -75,9 +75,9 @@ ____________________________________
   }
   else {
     try {
-      if (!fs.existsSync(__dirname + `/Nayan/scripts/events/Nayan/font/20260615_175139@1647879766.jpg`)) {
+      if (!fs.existsSync(__dirname + `/Nayan/font/Semi.ttf`)) {
         let getfont = (await axios.get(fontlink, { responseType: "arraybuffer" })).data;
-        fs.writeFileSync(__dirname + `/Nayan/scripts/events/Nayan/font/20260615_175139@1647879766.jpg`, Buffer.from(getfont, "utf-8"));
+        fs.writeFileSync(__dirname + `/Nayan/font/Semi.ttf`, Buffer.from(getfont, "utf-8"));
       };
       const { createReadStream, existsSync, mkdirSync, readdirSync } = global.nodemodule["fs-extra"];
       let { threadName, participantIDs } = await api.getThreadInfo(threadID);
