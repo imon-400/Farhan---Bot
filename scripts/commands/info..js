@@ -25,15 +25,15 @@ const time = process.uptime(),
 		seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = ["https://i.postimg.cc/XYVDwghc/IMG-20251225-060146-164.jpg", 
+var link = ["https://i.postimg.cc/Jz8XRP2J/20260624-164805-1518968413.jpg", 
             
-            "https://i.postimg.cc/XYVDwghc/IMG-20251225-060146-164.jpg", 
+            "", 
             
-            "https://i.postimg.cc/XYVDwghc/IMG-20251225-060146-164.jpg",
+            "",
 
-"https://i.postimg.cc/XYVDwghc/IMG-20251225-060146-164.jpg",
+"",
             
-            "https://i.postimg.cc/XYVDwghc/IMG-20251225-060146-164.jpg"];
+            ""];
   
 var callback = () => api.sendMessage({body:`🌺🍒🐰❀𝐀𝐃𝐌𝐈𝐍 𝐀𝐍𝐃 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐓𝐈𝐎𝐍💝🐰🍒 
 
