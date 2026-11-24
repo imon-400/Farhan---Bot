@@ -1,7 +1,7 @@
 const fs = require("fs");
 module.exports = {
   config:{
-  name: "@এৃঁলেৃঁ'ক্সৃঁ সিৃঁ'জুৃঁ'কাৃঁ",
+  name: "@Imon",
         version: "1.0.1",
         prefix: false,
   permssion: 0,
