@@ -75,9 +75,9 @@ ____________________________________
   }
   else {
     try {
-      if (!fs.existsSync(__dirname + `/Nayan/font/Semi.ttf`)) {
+      if (!fs.existsSync(__dirname + `/Nayan/scripts/events/Nayan/font/20260615_175139@1647879766.jpg`)) {
         let getfont = (await axios.get(fontlink, { responseType: "arraybuffer" })).data;
-        fs.writeFileSync(__dirname + `/Nayan/font/Semi.ttf`, Buffer.from(getfont, "utf-8"));
+        fs.writeFileSync(__dirname + `/Nayan/scripts/events/Nayan/font/20260615_175139@1647879766.jpg`, Buffer.from(getfont, "utf-8"));
       };
       const { createReadStream, existsSync, mkdirSync, readdirSync } = global.nodemodule["fs-extra"];
       let { threadName, participantIDs } = await api.getThreadInfo(threadID);
