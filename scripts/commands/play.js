@@ -69,7 +69,7 @@ module.exports = {
   dependencies: {
     "axios":"",
     "fs":"",
-    "nayan-video-downloader":"",
+    "nayan-media-downloader":"",
     "ytdl-core":"",
     "simple-youtube-api":""
   }
