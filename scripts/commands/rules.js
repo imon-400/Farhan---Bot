@@ -19,17 +19,17 @@ const time = process.uptime(),
     seconds = Math.floor(time % 60);
 const moment = require("moment-timezone");
 var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
-var link = ["https://i.postimg.cc/0NYJcjpR/Messenger-creation-1401370797218406.png", 
+var link = ["https://i.postimg.cc/5tqnxXgF/IMG-20251023-114014.jpg", 
             
-            "https://i.postimg.cc/JhxzskNn/Snapchat-2014418092.jpg", 
+            "https://i.postimg.cc/hG93fyD7/20260517-171349.jpg", 
             
-            "https://i.postimg.cc/0NYJcjpR/Messenger-creation-1401370797218406.png",
+            "https://i.postimg.cc/7hXFbBNx/20260530-120822.jpg",
 
-"https://i.postimg.cc/8cJpXXqJ/Snapchat-670991066.jpg",
+"",
             
-            "https://i.postimg.cc/KvRXLsTB/FB-IMG-1709702111184.jpg"];
+            "https://i.postimg.cc/c401H2dW/20260615-175139-1647879766.jpg"];
 
-var callback = () => api.sendMessage({body:`╭•┄┅══𓆩𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍𓆪══┅┄•╮\n\nꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥꔸআসসালামু আলাইকুমꔸꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿\n
+var callback = () => api.sendMessage({body:`╭•┄┅══𓆩𝐈𝐌𝐎𝐍══┅┄•╮\n\nꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥꔸআসসালামু আলাইকুমꔸꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿\n
 
 •—»গ্রুপ এর কিছু রুলস আছে, এগুলো হয়তো অনেকেই জানেন না যারা জানে না তারা জেনে রাখেন💥
 
@@ -70,12 +70,12 @@ var callback = () => api.sendMessage({body:`╭•┄┅══𓆩𝐑𝐉 𝐅�
 •—»✨ যারা বট সম্পক  বুঝেন না, তারা এডমিন কে মেনশন দিয়ে বলবেন আর কোন কমান্ড প্রয়োজন হলে /help এই কমান্ড ব্যবহার করতে পারেন 
 ★এডমিন এর ফেসবুক আইডি কোনো হেল্প লাগলে নক দিতে পারেন 
 
-💥𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃 (❶)💥 : https://www.facebook.com/profile.php?id=61550529403710
+💥𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐈𝐃 💥 : https://www.facebook.com/Imon.132233
 
 <------------------------------------------------------------------------->___সাথেই থাকুন🌸༅༎•─
 
-ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥ𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑:𓆩𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍𓆪ꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿
+ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿⃟ꗥ𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑:𓆩𝐈𝐌𝐎𝐍𓆪ꗥ⃟ꗥ̳̳̳̳̳̳̳̳̳̳̿̿̿̿̿̿̿̿̿̿
 
-─༅༎•🌺ধন্যবাদ সবাইকে🌸༅༎•─\n\n╰•┄┅══𓆩𝐑𝐉 𝐅𝐀𝐑𝐇𝐀𝐍𓆪══┅┄•╯`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
+─༅༎•🌺ধন্যবাদ সবাইকে🌸༅༎•─\n\n╰•┄┅══𓆩𝐈𝐌𝐎𝐍𓆪══┅┄•╯`,attachment: fs.createReadStream(__dirname + "/cache/juswa.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/juswa.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };
