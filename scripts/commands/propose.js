@@ -17,7 +17,7 @@ module.exports.run = async function({ api, args, Users, event}) {
     var arraytag = [];
         arraytag.push({id: mention, tag: name});
     var a = function (a) { api.sendMessage(a, event.threadID); }
-a("....///-- আমি আমার বস ফারহান  এর পক্ষো থেকে বলতাছি, ☺️💝🌺...//");
+a("....///-- আমি ইমন বস ফারহান  এর পক্ষো থেকে বলতাছি, ☺️💝🌺...//");
 setTimeout(() => {a({body: "শুনো প্রিয় খুব ভালো বাসি তোমায় 🥰।" + " " + name, mentions: arraytag})}, 3000);
 setTimeout(() => {a({body: "তোমার সাৎে একবার কথা না বল্লে আমার মনটা কেমন জানি করে☺️" + " " + name, mentions: arraytag})}, 5000);
 setTimeout(() => {a({body: "তুমি আমায় কি করলে তোমাকে ছাড়া আমি কিছু বুঝিনা কেন এই মন শুধু খোঁজে তোমাকে সারাক্ষণ😒" + " " + name, mentions: arraytag})}, 7000);
