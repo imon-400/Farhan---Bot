@@ -26,7 +26,7 @@ react.includes("nude") ||
 react.includes("Fucking") ||
 react.includes("🤤")) {
 		var msg = {
-				body: "- প্রেম পিরিতি নামক কিছু বলতে মন চাইলে বস ফারহান এর ইনবক্স চলে জাও-!!🌚❌                                                                                                              👉https://www.facebook.com/DEVIL.FARHAN.420!!♻️✔️"
+				body: "- প্রেম পিরিতি নামক কিছু বলতে মন চাইলে বস ইমন এর ইনবক্স চলে জাও-!!🌚❌                                                                                                              👉https://www.facebook.com/DEVIL.FARHAN.420!!♻️✔️"
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("😤", event.messageID, (err) => {}, true)
